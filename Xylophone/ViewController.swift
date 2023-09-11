@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     
     func playSound(soundName: String) {
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
                 
